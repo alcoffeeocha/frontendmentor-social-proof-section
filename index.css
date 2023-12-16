@@ -1,0 +1,124 @@
+:root {
+  --clr-darkest-magenta: hsl(300, 43%, 22%);
+  --clr-pink: hsl(333, 80%, 67%);
+  --clr-gray-magenta: hsl(303, 10%, 53%);
+  --clr-lighter-magenta: hsl(300, 24%, 96%);
+  --large-breakpoint: 60em;
+}
+
+body {
+  font-size: 15px;
+  line-height: 1;
+  font-family: 'League Spartan', sans-serif;
+  min-height: 100vh;
+}
+
+.css-container {
+  max-width: 540px;
+  margin-inline: auto;
+}
+
+.css-decoration {
+  background: url(images/bg-pattern-top-mobile.svg) left top no-repeat, url(images/bg-pattern-bottom-mobile.svg) left bottom no-repeat;
+  background-size: min(23rem, 100%), 100%;
+}
+
+.css-main {
+  padding-block: 80px;
+  overflow-x: hidden;
+}
+
+.css-section-ratings > * {
+  margin-bottom: .75rem;
+}
+
+.css-section-ratings > *:last-child {
+  margin-bottom: 0;
+}
+
+.css-section-testimonials > * {
+  margin-bottom: .75rem;
+}
+
+.css-section-testimonials > *:last-child {
+  margin-bottom: 0;
+}
+
+.css-stars > * {
+  display: inline-block;
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+
+.css-stars > *:last-child {
+  margin-right: 0;
+}
+
+.css-avatar {
+  border-radius: 50%;
+  display: inline-block;
+  width: 2.5rem;
+}
+
+/* desktop overrides, following tachyons large breakpoint */
+@media (width >= 60em){ /* 900px up */
+  .css-container {
+    max-width: 1140px;
+  }
+  
+  .css-decoration {
+    background: url(images/bg-pattern-top-desktop.svg) left top no-repeat, url(images/bg-pattern-bottom-desktop.svg) right bottom no-repeat;
+    background-size: min(28rem, 100%), min(78rem, 100%);
+  }
+  
+  .css-section-headline {
+    width: 20rem;
+  }
+
+  .css-section-ratings > *:nth-child(2) {
+    margin-left: calc(1 * 2rem);
+  }
+  .css-section-ratings > *:nth-child(3) {
+    margin-left: calc(2 * 2rem);
+  }
+
+  .css-rating {
+    width: 24rem;
+  }
+
+  .css-stars > * {
+    margin-right: 0.25rem;
+  }
+  
+  .css-stars > *:last-child {
+    margin-right: 0;
+  }
+
+  .css-section-testimonials {
+    display: grid;
+    column-gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: max-content;
+  }
+
+  .css-section-testimonials > * {
+    height: max-content;
+  }
+
+  .css-section-testimonials > *:nth-child(2){
+    margin-top: calc(1 * 1rem);
+  }
+
+  .css-section-testimonials > *:nth-child(3){
+    margin-top: calc(2 * 1rem);
+  }
+
+  /* UTILITIES */
+  .ph3\.5-l {
+    padding-inline: 1.5rem;
+  }
+
+  .mr3\.5-l {
+    margin-right: 1.5rem;
+  }
+}

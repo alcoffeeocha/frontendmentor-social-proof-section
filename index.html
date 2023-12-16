@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="utils.css"> <!-- should load before tachyons -->
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="animations.css">
+
+  <title>Frontend Mentor | Social proof section</title>
+</head>
+
+<body class='css-decoration'>
+  <main class='ph3.5 css-main css-container js-main'>
+    <div class='mb4.5 mb5-l flex-l justify-between-l'>
+      <section class='tc mb4 tl-l mb0-l css-section-headline'>
+        <strong class='mb3.5 darkest-magenta fw7 f2 ph4 db lh-tight ph0-l lh-solid-l' data-anim-name="title"
+          data-anim-delay="500" data-anim-l-name="title" data-anim-l-delay="500">
+          10,000+ of our users love our products.
+        </strong>
+        <p class='gray-magenta lh-copy-l' data-anim-name="description" data-anim-delay="750"
+          data-anim-l-name="description" data-anim-l-delay="500">
+          We only provide great products combined with excellent customer service.
+          See what our satisfied customers are saying about our services.
+        </p>
+      </section>
+      <section class="css-section-ratings">
+        <div class="pa3 bg-lighter-magenta br3 items-center flex-l ph3.5-l css-rating" data-anim-l-name="rating"
+          data-anim-l-key="1" data-anim-l-await="title" data-anim-l-delay="1000">
+          <div class="tc mb2 mb0-l mr3.5-l css-stars">
+            <img src="images/icon-star.svg" alt="star 1" data-anim-name="star" data-anim-delay="1200"
+              data-anim-l-name="star" data-anim-l-delay="500" data-anim-l-wait="rating-1">
+            <img src="images/icon-star.svg" alt="star 2" data-anim-name="star" data-anim-delay="1200"
+              data-anim-l-name="star" data-anim-l-delay="650" data-anim-l-wait="rating-1">
+            <img src="images/icon-star.svg" alt="star 3" data-anim-name="star" data-anim-delay="1200"
+              data-anim-l-name="star" data-anim-l-delay="800" data-anim-l-wait="rating-1">
+            <img src="images/icon-star.svg" alt="star 4" data-anim-name="star" data-anim-delay="1200"
+              data-anim-l-name="star" data-anim-l-delay="950" data-anim-l-wait="rating-1">
+            <img src="images/icon-star.svg" alt="star 5" data-anim-name="star" data-anim-delay="1200"
+              data-anim-l-name="star" data-anim-l-delay="1100" data-anim-l-wait="rating-1">
+          </div>
+          <p class='darkest-magenta fw7 tc flex-grow tl-l' data-anim-name="title" data-anim-delay="1000">Rated 5 Stars
+            in Reviews</p>
+        </div>
+        <div class="pa3 bg-lighter-magenta br3 items-center flex-l ph3.5-l css-rating" data-anim-l-name="rating"
+          data-anim-l-delay="1000" data-anim-l-key="2" data-anim-l-await="title">
+          <div class="tc mb2 mb0-l mr3.5-l css-stars">
+            <img src="images/icon-star.svg" alt="star 1" data-anim-name="star" data-anim-delay="1200"
+              data-anim-l-name="star" data-anim-l-delay="500" data-anim-l-wait="rating-2">
+            <img src="images/icon-star.svg" alt="star 2" data-anim-name="star" data-anim-delay="1200"
+              data-anim-l-name="star" data-anim-l-delay="650" data-anim-l-wait="rating-2">
+            <img src="images/icon-star.svg" alt="star 3" data-anim-name="star" data-anim-delay="1200"
+              data-anim-l-name="star" data-anim-l-delay="800" data-anim-l-wait="rating-2">
+            <img src="images/icon-star.svg" alt="star 4" data-anim-name="star" data-anim-delay="1200"
+              data-anim-l-name="star" data-anim-l-delay="950" data-anim-l-wait="rating-2">
+            <img src="images/icon-star.svg" alt="star 5" data-anim-name="star" data-anim-delay="1200"
+              data-anim-l-name="star" data-anim-l-delay="1100" data-anim-l-wait="rating-2">
+          </div>
+          <p class='darkest-magenta fw7 tc flex-grow tl-l' data-anim-name="title" data-anim-delay="1000">Rated 5 Stars
+            in Report Guru</p>
+        </div>
+        <div class="pa3 bg-lighter-magenta br3 items-center flex-l ph3.5-l css-rating" data-anim-l-name="rating"
+          data-anim-l-delay="1000" data-anim-l-key="3" data-anim-l-await="title">
+          <div class="tc mb2 mb0-l mr3.5-l css-stars">
+            <img src="images/icon-star.svg" alt="star 1" data-anim-name="star" data-anim-delay="1200"
+              data-anim-l-name="star" data-anim-l-delay="500" data-anim-l-wait="rating-3">
+            <img src="images/icon-star.svg" alt="star 2" data-anim-name="star" data-anim-delay="1200"
+              data-anim-l-name="star" data-anim-l-delay="650" data-anim-l-wait="rating-3">
+            <img src="images/icon-star.svg" alt="star 3" data-anim-name="star" data-anim-delay="1200"
+              data-anim-l-name="star" data-anim-l-delay="800" data-anim-l-wait="rating-3">
+            <img src="images/icon-star.svg" alt="star 4" data-anim-name="star" data-anim-delay="1200"
+              data-anim-l-name="star" data-anim-l-delay="950" data-anim-l-wait="rating-3">
+            <img src="images/icon-star.svg" alt="star 5" data-anim-name="star" data-anim-delay="1200"
+              data-anim-l-name="star" data-anim-l-delay="1100" data-anim-l-wait="rating-3">
+          </div>
+          <p class='darkest-magenta fw7 tc flex-grow tl-l' data-anim-name="title" data-anim-delay="1000">Rated 5 Stars
+            in BestTech</p>
+        </div>
+      </section>
+    </div>
+    <section class='css-section-testimonials'>
+      <div class="pa4 bg-darkest-magenta br2" data-anim-name='from-right' data-anim-on-visible
+        data-anim-l-name="testimonial" data-anim-l-wait="title" data-anim-l-delay="2000">
+        <div class="flex items-center mb3.5">
+          <img class='css-avatar' src="images/image-colton.jpg" alt="Colton Smith">
+          <div class="ml3">
+            <p class='white fw5 lh-copy'>Colton Smith</p>
+            <p class='pink'>Verified Buyer</p>
+          </div>
+        </div>
+        <p class='white'>"We needed the same printed design as the one we had ordered a week prior.
+          Not only did they find the original order, but we also received it in time.
+          Excellent!"</p>
+      </div>
+      <div class="pa4 bg-darkest-magenta br2" data-anim-name='from-left' data-anim-on-visible
+        data-anim-l-name="testimonial" data-anim-l-wait="title" data-anim-l-delay="2500">
+        <div class="flex items-center mb3.5">
+          <img class='css-avatar' src="images/image-irene.jpg" alt="Colton Smith">
+          <div class="ml3">
+            <p class='white fw5 lh-copy'>Irene Roberts</p>
+            <p class='pink'>Verified Buyer</p>
+          </div>
+        </div>
+        <p class='white'>"Customer service is always excellent and very quick turn around. Completely
+          delighted with the simplicity of the purchase and the speed of delivery."</p>
+      </div>
+      <div class="pa4 bg-darkest-magenta br2" data-anim-name='from-right' data-anim-on-visible
+        data-anim-l-name="testimonial" data-anim-l-wait="title" data-anim-l-delay="3000">
+        <div class="flex items-center mb3.5">
+          <img class='css-avatar' src="images/image-anne.jpg" alt="Colton Smith">
+          <div class="ml3">
+            <p class='white fw5 lh-copy'>Anne Wallace</p>
+            <p class='pink'>Verified Buyer</p>
+          </div>
+        </div>
+        <p class='white'>"Put an order with this company and can only praise them for the very high
+          standard. Will definitely use them again and recommend them to everyone!"</p>
+      </div>
+    </section>
+  </main>
+  <script src="animations.js"></script>
+</body>
+
+</html>

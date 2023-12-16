@@ -1,0 +1,60 @@
+/* colors... */
+.darkest-magenta {
+  color: var(--clr-darkest-magenta);
+}
+
+.pink {
+  color: var(--clr-pink);
+}
+
+.gray-magenta {
+  color: var(--clr-gray-magenta);
+}
+
+.lighter-magenta {
+  color: var(--clr-lighter-magenta);
+}
+
+.bg-lighter-magenta {
+  background-color: var(--clr-lighter-magenta);
+}
+
+.bg-darkest-magenta {
+  background-color: var(--clr-darkest-magenta);
+}
+
+/* spacing... */
+.mb3\.5 {
+  margin-bottom: 1.5rem;
+}
+
+.mb4\.5 {
+  margin-bottom: 3rem;
+}
+
+.ph3\.5 {
+  padding-inline: 1.5rem;
+}
+
+.lh-tight {
+  line-height: .8;
+}
+
+/* other */
+.object-cover {
+  object-fit: cover;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+@media (width >= 60em) {
+  .ph3\.5-l {
+    padding-inline: 1.5rem;
+  }
+
+  .mr3\.5-l {
+    margin-right: 1.5rem;
+  }
+}
